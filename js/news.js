@@ -1,5 +1,3 @@
-// Авторизация администратора
-
 document.addEventListener('DOMContentLoaded', () => {
 
     const adminBtn = document.querySelector('#adminLoginBtn');
@@ -20,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         adminModal.classList.add('active');
     });
 
-    // Отображение корзины
+    // Отображение корзин
     function showBins() {
         const newsBins = document.querySelectorAll('.news-card__bin');
         newsBins.forEach(bin => {
@@ -144,7 +142,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Загрузка новостей
     function loadNews() {
-
         const news = JSON.parse(localStorage.getItem('news')) || [];
 
         news.reverse().forEach(item => {

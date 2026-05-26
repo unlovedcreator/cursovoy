@@ -54,23 +54,6 @@ ul {
     list-style: none;
 }
 
-.skip-link {
-    position: absolute;
-    top: -40px;
-    left: 20px;
-    background-color: var(--color-brown-dark);
-    color: var(--color-white);
-    padding: 10px 16px;
-    border-radius: 6px;
-    z-index: 2000;
-    transition: top 0.2s ease;
-}
-
-.skip-link:focus-within {
-    top: 20px;
-}
-
-
 .header {
     border-bottom: 2px solid var(--color-brown-light);
 }

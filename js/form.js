@@ -1,4 +1,3 @@
-    // ========== FORM VALIDATION ==========
 document.addEventListener('DOMContentLoaded', function () {
     const contactForm = document.querySelector('.form');
 
@@ -73,7 +72,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // ========== HELPER FUNCTIONS ==========
     function showError(input, message) {
         if (!input) return;
         input.classList.add('form__input--error');
