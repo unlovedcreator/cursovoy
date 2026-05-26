@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="icon" href="img/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/contacts.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <a href="main.html" class="header__logo" aria-label="На главную">
+                Компания
+            </a>
+            <button class="header__burger" aria-label="Меню" aria-expanded="false">☰</button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="main.html" class="nav__link">Главная</a></li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">О компании <span class="nav__link__arrow">▾</span></a>
+                        <ul class="nav__dropdown">
+                            <li><a href="about.html#awards" class="nav__dropdown-link">Награды</a></li>
+                            <li><a href="about.html#docs" class="nav__dropdown-link">Документация</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a href="services.html" class="nav__link">Услуги</a></li>
+                    <li class="nav__item"><a href="portfolio.html" class="nav__link">Проекты</a></li>
+                    <li class="nav__item"><a href="news.html" class="nav__link">Новости</a></li>
+                    <li class="nav__item nav__item__cont"><a href="contacts.html" class="nav__link active">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__contact">
+                <span class="header__phone"> +7 (***) **-**-** </span>
+                <div class="header__socials">
+                    <a href="#" class="header__social-link" aria-label="ВКонтакте">VK</a>
+                    <a href="#" class="header__social-link" aria-label="Telegram">TG</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main" id="main-content">
+        <section class="page-header" aria-labelledby="page-title">
+            <h1 id="page-title" class="page-header__title">Контакты</h1>
+            <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                <a href="main.html">Главная</a> / Контакты
+            </nav>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="contacts">
+                    <div class="contacts-info">
+                        <div class="contacts-info__item">
+                            <div>
+                                <div class="contacts-info__label">Адрес офиса</div>
+                                <div class="contacts-info__value">г. *, ул. *, дом *</div>
+                            </div>
+                        </div>
+                        <div class="contacts-info__item">
+                            <div>
+                                <div class="contacts-info__label">Телефон</div>
+                                <div class="contacts-info__value">+7 (***) ***-**-**</div>
+                            </div>
+                        </div>
+                        <div class="contacts-info__item">
+                            <div>
+                                <div class="contacts-info__label">Электронная почта</div>
+                                <div class="contacts-info__value">info@****.ru</div>
+                            </div>
+                        </div>
+                        <div class="contacts-info__item">
+                            <div>
+                                <div class="contacts-info__label">Режим работы</div>
+                                <div class="contacts-info__value">Пн–Пт: 09:00 – 18:00<br>Сб, Вс: выходной</div>
+                            </div>
+                        </div>
+                        <div class="contacts-info__item">
+                            <div>
+                                <div class="contacts-info__label">Реквизиты</div>
+                                <div class="contacts-info__value">
+                                    ООО ***<br>
+                                    ИНН ***<br>
+                                    ОГРН ***
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contacts-form">
+                        <form class="form" id="contact-form" novalidate>
+                            <h2 class="form__title">Оставить заявку</h2>
+                            <div class="form__group">
+                                <label for="name" class="form__label form__label--required">Имя</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    class="form__input"
+                                    placeholder="Ваше имя"
+                                    aria-describedby="name-error"
+                                    required
+                                >
+                                <span id="name-error" class="form__error-msg"></span>
+                            </div>
+                            <div class="form__group">
+                                <label for="phone" class="form__label form__label--required">Телефон</label>
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    class="form__input"
+                                    placeholder="+7 (___) ___-__-__"
+                                    aria-describedby="name-error"
+                                    required
+                                >
+                                <span id="name-error" class="form__error-msg"></span>
+                            </div>
+                            <div class="form__group">
+                                <label for="email" class="form__label form__label--required">Электронная почта</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    class="form__input"
+                                    placeholder="name@domain.ru"
+                                    aria-describedby="name-error"
+                                    required
+                                >
+                                <span id="name-error" class="form__error-msg"></span>
+                            </div>
+                            <div class="form__group">
+                                <label for="message" class="form__label">Сообщение</label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    class="form__textarea"
+                                    placeholder="Опишите ваш вопрос или проект..."
+                                ></textarea>
+                            </div>
+                            <button type="submit" class="form__btn">Отправить</button>
+                            <div class="form__success" aria-live="polite">
+                                Ваша заявка успешно отправлена! Мы свяжемся с вами в ближайшее время.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div>
+                <h4 class="footer__title">Навигация</h4>
+                <ul class="footer__nav-list">
+                    <li><a href="main.html">Главная</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="portfolio.html">Проекты</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer__title">Информация</h4>
+                <ul class="footer__nav-list">
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer__title">Контакты</h4>
+                <p class="footer__contact-item"> +7 (***) ***-**-**</p>
+                <p class="footer__contact-item">✉ info@****.ru</p>
+                <p class="footer__contact-item"> г. *, ул. *, дом *</p>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            Сайт создан в ознакомительных целях. Все совпадения случайны.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>

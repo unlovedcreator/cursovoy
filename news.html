@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости</title>
+    <link rel="icon" href="img/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/news.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <a href="main.html" class="header__logo" aria-label="На главную">
+                Компания
+            </a>
+            <button class="header__burger" aria-label="Меню" aria-expanded="false">☰</button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="main.html" class="nav__link">Главная</a></li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">О компании <span class="nav__link__arrow">▾</span></a>
+                        <ul class="nav__dropdown">
+                            <li><a href="about.html#awards" class="nav__dropdown-link">Награды</a></li>
+                            <li><a href="about.html#docs" class="nav__dropdown-link">Документация</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a href="services.html" class="nav__link">Услуги</a></li>
+                    <li class="nav__item"><a href="portfolio.html" class="nav__link">Проекты</a></li>
+                    <li class="nav__item"><a href="news.html" class="nav__link active">Новости</a></li>
+                    <li class="nav__item nav__item__cont"><a href="contacts.html" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__contact">
+                <span class="header__phone"> +7 (***) **-**-** </span>
+                <div class="header__socials">
+                    <a href="#" class="header__social-link" aria-label="ВКонтакте">VK</a>
+                    <a href="#" class="header__social-link" aria-label="Telegram">TG</a>
+                </div>
+            </div>
+
+            <button class="admin-login-btn" id="adminLoginBtn" aria-hidden="true">
+                Вход
+            </button>
+        </div>
+    </header>
+
+    <main class="main" id="main-content">
+        <section class="page-header" aria-labelledby="page-title">
+            <h1 id="page-title" class="page-header__title">Новости</h1>
+            <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                <a href="main.html">Главная</a> / Новости
+            </nav>
+        </section>
+    
+    <!-- Окно авторизации -->
+    <div class="admin-modal" id="adminModal" aria-hidden="true">
+        <div class="admin-modal__content">
+            <h2>Авторизация</h2>
+            <button class="admin-modal__close">✕</button>
+            <input type="text" id="loginInput" placeholder="Логин">
+            <input type="password" id="passwordInput" placeholder="Пароль">
+
+            <button id="loginSubmit">Войти</button>
+
+            <p class="admin-error" id="adminError"></p>
+        </div>
+    </div>
+
+    <!-- Панель администратора -->
+    <section class="admin-panel" id="adminPanel" aria-hidden="true">
+        <div class="container">
+            <h2 class="admin-panel__title">Добавить новость</h2>
+            <form id="newsForm" class="news-form">
+                <input type="text" id="newsTitle" placeholder="Заголовок" required>
+                <textarea
+                    id="newsText"
+                    placeholder="Текст новости"
+                    required
+                ></textarea>
+                <button type="submit">
+                    Добавить новость
+                </button>
+            </form>
+        </div>
+    </section> 
+
+        <section class="section">
+            <div class="container">
+                <div class="news-list">
+                    <article class="news-card">
+                        <div class="news-card__date">
+                            <span class="news-card__day">15</span>
+                            <span class="news-card__month">марта 2026</span>
+                        </div>
+                        <button class="news-card__bin">🗑️</button>
+                        <div class="news-card__content">
+                            <h2 class="news-card__title">Сдан в эксплуатацию новый ЖК</h2>
+                            <p class="news-card__text">
+                                Госкомиссия подписала акт приёмки жилого комплекса. 50 семей получили ключи от новых домов на два месяца раньше 
+                                запланированного срока.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <div class="news-card__date">
+                            <span class="news-card__day">02</span>
+                            <span class="news-card__month">марта 2026</span>
+                        </div>
+                        <button class="news-card__bin">🗑️</button>
+                        <div class="news-card__content">
+                            <h2 class="news-card__title">Компания получила лицензию на проектирование</h2>
+                            <p class="news-card__text">
+                                "СтройСтандарт" расширила перечень компетенций и теперь имеет право проектировать объекты повышенного уровня
+                                ответственности.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <div class="news-card__date">
+                            <span class="news-card__day">20</span>
+                            <span class="news-card__month">февраля 2026</span>
+                        </div>
+                        <button class="news-card__bin">🗑️</button>
+                        <div class="news-card__content">
+                            <h2 class="news-card__title">Победа в тендере на строительство школы</h2>
+                            <p class="news-card__text">
+                                Подписан контракт на строительство общеобразовательной школы в новом микрорайоне города. Начало работ — апрель 2026 
+                                года.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <div class="news-card__date">
+                            <span class="news-card__day">12</span>
+                            <span class="news-card__month">января 2026</span>
+                        </div>
+                        <button class="news-card__bin">🗑️</button>
+                        <div class="news-card__content">
+                            <h2 class="news-card__title">Расширение кадрового отдела</h2>
+                            <p class="news-card__text">
+                                Компания увеличила количество рабочих мест. На работу приглашаются: инженеры ПТО, прорабы, начальники участка. Стаж 
+                                работы - не менее 10 лет. За дополнительными подробностями обращаться по контактам на нашем сайте.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <div class="news-card__date">
+                            <span class="news-card__day">01</span>
+                            <span class="news-card__month">января 2026</span>
+                        </div>
+                        <button class="news-card__bin">🗑️</button>
+                        <div class="news-card__content">
+                            <h2 class="news-card__title">С Новым годом!</h2>
+                            <p class="news-card__text">
+                                Наша компания поздравляет Вас с наступившим 2026 годом и желает исполнения всех самых заветных мечт!
+                            </p>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <div class="news-card__date">
+                            <span class="news-card__day">30</span>
+                            <span class="news-card__month">декабря 2025</span>
+                        </div>
+                        <button class="news-card__bin">🗑️</button>
+                        <div class="news-card__content">
+                            <h2 class="news-card__title">Итоги 2025 года</h2>
+                            <p class="news-card__text">
+                                Сдача более 200000 квадратных метров жилья, строительство новой школы, многопрофильного медицинского центра,
+                                награда за вклад в развитие строительной области и не только - 
+                                <a href="#" aria-label="Ссылка на отчёт по работе компании за 2025 год">в нашем отчёте за проделанную работу 
+                                в уходящем году</a>.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div>
+                <h4 class="footer__title">Навигация</h4>
+                <ul class="footer__nav-list">
+                    <li><a href="main.html">Главная</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="portfolio.html">Проекты</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer__title">Информация</h4>
+                <ul class="footer__nav-list">
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer__title">Контакты</h4>
+                <p class="footer__contact-item"> +7 (***) ***-**-**</p>
+                <p class="footer__contact-item">✉ info@****.ru</p>
+                <p class="footer__contact-item"> г. *, ул. *, дом *</p>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            Сайт создан в ознакомительных целях. Все совпадения случайны.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/news.js"></script>
+</body>
+</html>

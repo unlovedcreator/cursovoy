@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="icon" href="img/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <a href="main.html" class="header__logo" aria-label="На главную">
+                Компания
+            </a>
+            <button
+                class="header__burger"
+                aria-label="Открыть меню"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+            >
+                ☰
+            </button>
+            <nav class="nav" id="mobile-menu" aria-hidden="true">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="main.html" class="nav__link active">Главная</a></li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">О компании <span class="nav__link__arrow">▾</span></a>
+                        <ul class="nav__dropdown">
+                            <li><a href="about.html#awards" class="nav__dropdown-link">Награды</a></li>
+                            <li><a href="about.html#docs" class="nav__dropdown-link">Документация</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a href="services.html" class="nav__link">Услуги</a></li>
+                    <li class="nav__item"><a href="portfolio.html" class="nav__link">Проекты</a></li>
+                    <li class="nav__item"><a href="news.html" class="nav__link">Новости</a></li>
+                    <li class="nav__item nav__item__cont"><a href="contacts.html" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__contact">
+                <span class="header__phone"> +7 (***) **-**-** </span>
+                <div class="header__socials">
+                    <a href="#" class="header__social-link" aria-label="ВКонтакте">VK</a>
+                    <a href="#" class="header__social-link" aria-label="Telegram">TG</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main" id="main-content">
+        <section class="hero">
+            <h1 class="hero__title">Строим будущее вместе</h1>
+            <p class="hero__subtitle">
+                Проектирование, генеральный подряд и реставрация объектов любой сложности с гарантией качества.
+            </p>
+            <a href="contacts.html" class="hero__btn">Связаться с нами</a>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section__title">Наши объекты</h2>
+                <p class="section__subtitle">Гордимся каждым реализованным проектом</p>
+                <div class="photo-grid">
+                    <div class="photo-grid__item">
+                        <img src="img/main/house1.webp"
+                          alt="Построенный дом"
+                          loading="lazy"
+                          width="509"
+                          height="509">
+                    </div> 
+                    <div class="photo-grid__item">
+                        <img src="img/main/house2.webp"
+                          alt="Построенный дом"
+                          loading="lazy"
+                          width="509"
+                          height="509">
+                    </div>
+                    <div class="photo-grid__item">
+                        <img src="img/main/house3.webp"
+                          alt="Построенный дом"
+                          loading="lazy"
+                          width="509"
+                          height="509">
+                    </div>
+                    <div class="photo-grid__item">
+                        <img src="img/main/house4.webp"
+                          alt="Построенный дом"
+                          loading="lazy"
+                          width="509"
+                          height="509">
+                    </div>
+                    <div class="photo-grid__item">
+                        <img src="img/main/house5.webp"
+                          alt="Построенный дом"
+                          loading="lazy"
+                          width="509"
+                          height="509">
+                    </div>
+                    <div class="photo-grid__item">
+                        <img src="img/main/house6.webp"
+                          alt="Построенный дом"
+                          loading="lazy"
+                          width="509"
+                          height="509">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="features">
+                    <div class="feature-card">
+                        <h3 class="feature-card__title">Наши услуги</h3>
+                        <p class="feature-card__text">Генеральный подряд, проектирование, реставрация - полный цикл строительных работ.</p>
+                        <a href="services.html" class="feature-card__link">Подробнее →</a>
+                    </div>
+                    <div class="feature-card">
+                        <h3 class="feature-card__title">Портфолио</h3>
+                        <p class="feature-card__text">Жилые комплексы, коммерческие и социальные объекты - ознакомьтесь с нашим опытом.</p>
+                        <a href="portfolio.html" class="feature-card__link">Смотреть проекты →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div>
+                <h4 class="footer__title">Навигация</h4>
+                <ul class="footer__nav-list">
+                    <li><a href="main.html">Главная</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="portfolio.html">Проекты</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer__title">Информация</h4>
+                <ul class="footer__nav-list">
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer__title">Контакты</h4>
+                <p class="footer__contact-item"> +7 (***) ***-**-**</p>
+                <p class="footer__contact-item">✉ info@****.ru</p>
+                <p class="footer__contact-item"> г. *, ул. *, дом *</p>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            Сайт создан в ознакомительных целях. Все совпадения случайны.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

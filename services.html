@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги</title>
+    <link rel="icon" href="img/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/services.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <a href="main.html" class="header__logo" aria-label="На главную">
+                Компания
+            </a>
+            <button class="header__burger" aria-label="Меню" aria-expanded="false">☰</button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="main.html" class="nav__link">Главная</a></li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">О компании <span class="nav__link__arrow">▾</span></a>
+                        <ul class="nav__dropdown">
+                            <li><a href="about.html#awards" class="nav__dropdown-link">Награды</a></li>
+                            <li><a href="about.html#docs" class="nav__dropdown-link">Документация</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a href="services.html" class="nav__link active">Услуги</a></li>
+                    <li class="nav__item"><a href="portfolio.html" class="nav__link">Проекты</a></li>
+                    <li class="nav__item"><a href="news.html" class="nav__link">Новости</a></li>
+                    <li class="nav__item nav__item__cont"><a href="contacts.html" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__contact">
+                <span class="header__phone"> +7 (***) **-**-** </span>
+                <div class="header__socials">
+                    <a href="#" class="header__social-link" aria-label="ВКонтакте">VK</a>
+                    <a href="#" class="header__social-link" aria-label="Telegram">TG</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main" id="main-content">
+        <section class="page-header" aria-labelledby="page-title">
+            <h1 id="page-title" class="page-header__title">Услуги</h1>
+            <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                <a href="main.html">Главная</a> / Услуги
+            </nav>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="services">
+                    <div class="service-section">
+                        <div class="service-text">
+                            <h2 class="service-section__title">Генеральный подряд</h2>
+                            <p class="service-section__desc">
+                            Наша компания организует работу субподрядных организаций, контролирует качество материалов и соблюдение 
+                            технологий, обеспечивает соблюдение графика и бюджета строительства. Мы несём полную ответственность за 
+                            конечный результат, что подтверждено многолетним опытом и портфолио реализованных объектов.
+                            </p>
+                        </div>
+                        <div class="service-section__image">
+                        <img src="img/services/gen.webp"
+                            alt="Генеральный подряд"
+                            loading="lazy"
+                            width="768"
+                            height="512">
+                        </div>      
+                    </div>
+                    <div class="service-section">
+                        <div class="service-text">
+                            <h2 class="service-section__title">Проектирование</h2>
+                            <p class="service-section__desc">
+                                Наши инженеры и архитекторы разрабатывают все разделы проекта: от архитектурной концепции до инженерных 
+                                сетей и благоустройства территории. Мы используем технологии информационного моделирования (BIM), что 
+                                позволяет увидеть объект в 3D ещё до начала строительства и избежать коллизий на площадке.
+                            </p>
+                        </div>
+                        <div class="service-section__image">
+                        <img src="img/services/proj.webp"
+                            alt="Проектирование"
+                            loading="lazy"
+                            width="768"
+                            height="512">
+                        </div>       
+                    </div>
+                    <div class="service-section">
+                        <div class="service-text">
+                            <h2 class="service-section__title">Реставрация построек</h2>
+                            <p class="service-section__desc">
+                                Наши специалисты имеют опыт реставрации объектов культурного наследия. Мы проводим детальное обследование, 
+                                подбираем аутентичные материалы и технологии, согласовываем документацию с надзорными органами. Итог - 
+                                здание живёт новой жизнью, не теряя связи с эпохой.
+                            </p>
+                        </div>  
+                        <div class="service-section__image">
+                        <img src="img/services/rest.webp"
+                            alt="Реставрация"
+                            loading="lazy"
+                            width="768"
+                            height="512">
+                        </div>
+                    </div>
+                    <div class="service-undersection">
+                        <h2 class="service-section__title">Качество - залог успеха</h2>
+                        <div class="service-section__desc service-undersection__desc">
+                            <p>Контроль на каждом этапе - основа нашей работы. Все материалы проходят входной контроль, 
+                            скрытые работы фиксируются, а отклонения от проекта недопустимы без согласования.</p>
+                            <p>Мы фиксируем сроки в договоре и несём за них финансовую ответственность. Календарный график 
+                            становится вашим инструментом планирования, а не формальным документом.</p>
+                            <p>В штате компании - аттестованные инженеры, производители работ с опытом от 7 лет и собственные 
+                            бригады по основным видам работ, каждый из наших работников подходит ответственно к любой задаче.</p>                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div>
+                <h4 class="footer__title">Навигация</h4>
+                <ul class="footer__nav-list">
+                    <li><a href="main.html">Главная</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="portfolio.html">Проекты</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer__title">Информация</h4>
+                <ul class="footer__nav-list">
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer__title">Контакты</h4>
+                <p class="footer__contact-item"> +7 (***) ***-**-**</p>
+                <p class="footer__contact-item">✉ info@****.ru</p>
+                <p class="footer__contact-item"> г. *, ул. *, дом *</p>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            Сайт создан в ознакомительных целях. Все совпадения случайны.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

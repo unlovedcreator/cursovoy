@@ -1,0 +1,180 @@
+/* ========== HERO ========== */
+.hero {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-beige-dark);
+    padding: 40px 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid var(--color-brown-light);
+}
+
+.hero__title {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--color-brown-dark);
+    margin-bottom: 16px;
+    letter-spacing: -0.5px;
+}
+
+.hero__subtitle {
+    font-size: 1.4rem;
+    color: var(--color-text-light);
+    max-width: 600px;
+    margin-bottom: 32px;
+}
+
+.hero__btn {
+    display: inline-block;
+    background-color: var(--color-brown);
+    color: var(--color-white);
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color var(--transition-speed),
+                transform var(--transition-speed);
+}
+
+.hero__btn:hover {
+    background-color: var(--color-brown-dark);
+    color: var(--color-white);
+    transform: translateY(-2px);
+}
+
+/* ========== SECTIONS ========== */
+.section {
+    padding: 10px;
+}
+
+.section__title {
+    padding: 10px 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-brown-dark);
+    text-align: center;
+}
+
+.section__subtitle {
+    text-align: center;
+    color: var(--color-text-light);
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+}
+
+/* ========== PHOTO GRID (Главная) ========== */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.photo-grid__item {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--color-beige-dark);
+    aspect-ratio: 1 / 1;
+    transition: transform var(--transition-speed),
+                box-shadow var(--transition-speed);
+}
+
+.photo-grid__item img {
+    width: 100%;
+    height: 100%;
+}
+
+.photo-grid__item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ========== FEATURE CARDS (Главная) ========== */
+.features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 0;
+    gap: 24px;
+}
+
+.feature-card {
+    background-color: var(--color-white);
+    border-radius: 12px;
+    padding: 36px 28px;
+    text-align: center;
+    border: 2px solid var(--color-beige-dark);
+    transition: transform var(--transition-speed),
+                box-shadow var(--transition-speed);
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.feature-card__title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-brown-dark);
+    margin-bottom: 8px;
+}
+
+.feature-card__text {
+    font-size: 1.1rem;
+    color: var(--color-text-light);
+    margin-bottom: 16px;
+}
+
+.feature-card__link {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+@media (max-width: 1024px) {
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 50px 16px;
+    }
+
+    .hero__title {
+        font-size: 2.5rem;
+        padding: 45px 5px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 375px) {
+    .feature-card {
+        padding: 18px 14px;
+    }
+
+    .hero__title {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    .hero__subtitle {
+        font-size: 1.2rem;
+    }
+
+    .section__title {
+        font-size: 1.5rem
+    }
+
+    .section__subtitle {
+        margin-bottom: 20px;
+    }
+}

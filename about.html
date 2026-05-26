@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас</title>
+    <link rel="icon" href="img/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <a href="main.html" class="header__logo" aria-label="На главную">
+                Компания
+            </a>
+            <button class="header__burger" aria-label="Меню" aria-expanded="false">☰</button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="main.html" class="nav__link">Главная</a></li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link active">О компании <span class="nav__link__arrow">▾</span></a>
+                        <ul class="nav__dropdown">
+                            <li><a href="about.html#awards" class="nav__dropdown-link">Награды</a></li>
+                            <li><a href="about.html#docs" class="nav__dropdown-link">Документация</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a href="services.html" class="nav__link">Услуги</a></li>
+                    <li class="nav__item"><a href="portfolio.html" class="nav__link">Проекты</a></li>
+                    <li class="nav__item"><a href="news.html" class="nav__link">Новости</a></li>
+                    <li class="nav__item nav__item__cont"><a href="contacts.html" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__contact">
+                <span class="header__phone"> +7 (***) **-**-** </span>
+                <div class="header__socials">
+                    <a href="#" class="header__social-link" aria-label="ВКонтакте">VK</a>
+                    <a href="#" class="header__social-link" aria-label="Telegram">TG</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main" id="main-content">
+        <section class="page-header" aria-labelledby="page-title">
+            <h1 id="page-title" class="page-header__title">О компании</h1>
+            <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                <a href="main.html">Главная</a> / О компании
+            </nav>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-content__text">
+                        <h2 class="section__title">Кто мы такие</h2>
+                        <p>
+                            Наша компания была основана в 2008 году. За более чем 15 лет работы мы заслужили репутацию надёжного партнёра в сфере строительства жилых, коммерческих и социальных объектов.
+                        </p>
+                        <p>
+                            Наша миссия - создавать качественные и безопасные здания, которые служат людям десятилетиями. Мы внедряем современные технологии, используем экологичные материалы и строго соблюдаем сроки сдачи проектов.
+                        </p>
+                    </div>
+                    <div class="about-content__image">
+                        <img src="img/about/photo-about.webp"
+                          alt="Один из жилых комплексов компании"
+                          loading="lazy"
+                          width="912"
+                          height="608">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="awards">
+            <div class="container">
+                <h2 class="section__title">Награды и дипломы</h2>
+                <p class="section__subtitle">Достижения, которыми мы гордимся</p>
+                <div class="awards-grid">
+                    <div class="award-card">
+                        <h3 class="award-card__title">Лучший застройщик - 2025</h3>
+                        <p class="award-card__desc">Премия в номинации "Жилое строительство" за новый жилой комплекс.</p>
+                    </div>
+                    <div class="award-card">
+                        <h3 class="award-card__title">Победитель международного конкурса СК</h3>
+                        <p class="award-card__desc">1 место в категории "Реставрация исторических зданий", 2024 г.</p>
+                    </div>
+                    <div class="award-card">
+                        <h3 class="award-card__title">Похвальный диплом</h3>
+                        <p class="award-card__desc">За вклад в развитие строительной отрасли региона, 2025 г.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="docs">
+            <div class="container">
+                <h2 class="section__title">Документация и лицензии</h2>
+                <p class="section__subtitle">Разрешительные документы на строительную деятельность</p>
+                <div class="docs-grid">
+                    <div class="doc-card">
+                        <div class="doc-card__icon">📄</div>
+                        <h3 class="doc-card__title">Лицензия СРО-С-123-456</h3>
+                        <p class="doc-card__desc">Генеральный подряд и строительство зданий до 100 м. 
+                            <a href="download.html" class="doc-card-download" aria-label="Скачать лицензию СРО-С-123-456">Скачать</a>
+                        </p>
+                    </div>
+                    <div class="doc-card">
+                        <div class="doc-card__icon">📄</div>
+                        <h3 class="doc-card__title">Лицензия СРО-П-789-012</h3>
+                        <p class="doc-card__desc">Проектирование зданий и сооружений I и II уровня ответственности. 
+                            <a href="download.html" class="doc-card-download" aria-label="Скачать лицензию СРО-П-789-012">Скачать</a>
+                        </p>
+                    </div>
+                    <div class="doc-card">
+                        <div class="doc-card__icon">📄</div>
+                        <h3 class="doc-card__title">Сертификат ISO 9001</h3>
+                        <p class="doc-card__desc">Система менеджмента качества соответствует международным стандартам. 
+                            <a href="download.html" class="doc-card-download" aria-label="Скачать сертификат ISO 9001">Скачать</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div>
+                <h4 class="footer__title">Навигация</h4>
+                <ul class="footer__nav-list">
+                    <li><a href="main.html">Главная</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="portfolio.html">Проекты</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer__title">Информация</h4>
+                <ul class="footer__nav-list">
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer__title">Контакты</h4>
+                <p class="footer__contact-item"> +7 (***) ***-**-**</p>
+                <p class="footer__contact-item">✉ info@****.ru</p>
+                <p class="footer__contact-item"> г. *, ул. *, дом *</p>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            Сайт создан в ознакомительных целях. Все совпадения случайны.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
