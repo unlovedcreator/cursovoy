@@ -1,169 +1,169 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Проекты</title>
-        <link rel="icon" href="img/favicon.ico" type="image/png">
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/global.css">
-        <link rel="stylesheet" href="css/portfolio.css">
-    </head>
-    <body>
-        <header class="header">
-            <div class="header__inner">
-                <a href="main.html" class="header__logo" aria-label="На главную">
-                    Компания
-                </a>
-                <button class="header__burger" aria-label="Меню" aria-expanded="false">☰</button>
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="main.html" class="nav__link">Главная</a></li>
-                        <li class="nav__item">
-                            <a href="about.html" class="nav__link">О компании <span class="nav__link__arrow">▾</span></a>
-                            <ul class="nav__dropdown">
-                                <li><a href="about.html#awards" class="nav__dropdown-link">Награды</a></li>
-                                <li><a href="about.html#docs" class="nav__dropdown-link">Документация</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav__item"><a href="services.html" class="nav__link">Услуги</a></li>
-                        <li class="nav__item"><a href="portfolio.html" class="nav__link active">Проекты</a></li>
-                        <li class="nav__item"><a href="news.html" class="nav__link">Новости</a></li>
-                        <li class="nav__item nav__item__cont"><a href="contacts.html" class="nav__link">Контакты</a></li>
-                    </ul>
-                </nav>
-                <div class="header__contact">
-                    <span class="header__phone"> +7 (***) **-**-** </span>
-                    <div class="header__socials">
-                        <a href="#" class="header__social-link" aria-label="ВКонтакте">VK</a>
-                        <a href="#" class="header__social-link" aria-label="Telegram">TG</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проекты</title>
+    <link rel="icon" href="img/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <a href="main.html" class="header__logo" aria-label="На главную">
+                Компания
+            </a>
+            <button class="header__burger" aria-label="Меню" aria-expanded="false">☰</button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="main.html" class="nav__link">Главная</a></li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">О компании <span class="nav__link__arrow">▾</span></a>
+                        <ul class="nav__dropdown">
+                            <li><a href="about.html#awards" class="nav__dropdown-link">Награды</a></li>
+                            <li><a href="about.html#docs" class="nav__dropdown-link">Документация</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a href="services.html" class="nav__link">Услуги</a></li>
+                    <li class="nav__item"><a href="portfolio.html" class="nav__link active">Проекты</a></li>
+                    <li class="nav__item"><a href="news.html" class="nav__link">Новости</a></li>
+                    <li class="nav__item nav__item__cont"><a href="contacts.html" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__contact">
+                <span class="header__phone"> +7 (***) **-**-** </span>
+                <div class="header__socials">
+                    <a href="#" class="header__social-link" aria-label="ВКонтакте">VK</a>
+                    <a href="#" class="header__social-link" aria-label="Telegram">TG</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main" id="main-content">
+        <section class="page-header" aria-labelledby="page-title">
+            <h1 id="page-title" class="page-header__title">Портфолио</h1>
+            <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                <a href="main.html">Главная</a> / Портфолио
+            </nav>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="portfolio">
+                    <div class="portfolio-card">
+                        <div class="portfolio-card__info">
+                            <h3 class="portfolio-card__title">Крупный жилой комплекс</h3>
+                            <p class="portfolio-card__desc">Частный сектор площадью 5 квадратных километров с новейшими домами.</p>
+                        </div>
+                        <div class="portfolio-card__image">
+                            <img src="img/portfolio/sector.webp"
+                            alt="Частный сектор"
+                            loading="lazy"
+                            width="500"
+                            height="333">
+                        </div>
+                    </div>
+                    <div class="portfolio-card">
+                        <div class="portfolio-card__info">
+                            <h3 class="portfolio-card__title">Бизнес-центр</h3>
+                            <p class="portfolio-card__desc">Офисное здание класса А, 22 этажа, стеклянный фасад.</p>
+                        </div>
+                        <div class="portfolio-card__image">
+                            <img src="img/portfolio/business.webp"
+                            alt="Бизнес-центр"
+                            loading="lazy"
+                            width="500"
+                            height="333">
+                        </div>    
+                    </div>
+                    <div class="portfolio-card">
+                        <div class="portfolio-card__info">
+                            <h3 class="portfolio-card__title">Школа</h3>
+                            <p class="portfolio-card__desc">Общеобразовательная школа на 1200 мест с бассейном и спорткомплексом.</p>                            
+                        </div>
+                        <div class="portfolio-card__image">
+                            <img src="img/portfolio/school.webp"
+                            alt="Школа"
+                            loading="lazy"
+                            width="500"
+                            height="333">
+                        </div>
+                    </div>
+                    <div class="portfolio-card">
+                        <div class="portfolio-card__info">
+                            <h3 class="portfolio-card__title">Медицинский центр</h3>
+                            <p class="portfolio-card__desc">Многофункциональный медцентр с диагностическим отделением и стационаром.</p>
+                        </div>
+                        <div class="portfolio-card__image">
+                            <img src="img/portfolio/medcenter.webp"
+                            alt="Медицинский центр"
+                            loading="lazy"
+                            width="500"
+                            height="333">
+                        </div>
+                    </div>
+                    <div class="portfolio-card">
+                        <div class="portfolio-card__info">
+                            <h3 class="portfolio-card__title">Реставрация усадьбы XIX века</h3>
+                            <p class="portfolio-card__desc">Восстановление исторического облика здания с сохранением оригинальной кладки.</p>
+                        </div>
+                        <div class="portfolio-card__image">
+                            <img src="img/portfolio/rest.webp"
+                            alt="Реставрация"
+                            loading="lazy"
+                            width="500"
+                            height="333">
+                        </div>
+                    </div>
+                    <div class="portfolio-card">
+                        <div class="portfolio-card__info">
+                            <h3 class="portfolio-card__title">Торговый центр</h3>
+                            <p class="portfolio-card__desc">ТРЦ площадью 45 000 квадратных метров с кинотеатром и фудкортом.</p>
+                        </div>
+                        <div class="portfolio-card__image">
+                            <img src="img/portfolio/mall.webp"
+                            alt="Торговый центр"
+                            loading="lazy"
+                            width="500"
+                            height="333">
+                        </div>
                     </div>
                 </div>
             </div>
-        </header>
+        </section>
+    </main>
 
-        <main class="main" id="main-content">
-            <section class="page-header" aria-labelledby="page-title">
-                <h1 id="page-title" class="page-header__title">Портфолио</h1>
-                <nav aria-label="Хлебные крошки" class="breadcrumbs">
-                    <a href="main.html">Главная</a> / Портфолио
-                </nav>
-            </section>
-            <section class="section">
-                <div class="container">
-                    <div class="portfolio">
-                        <div class="portfolio-card">
-                            <div class="portfolio-card__info">
-                                <h3 class="portfolio-card__title">Крупный жилой комплекс</h3>
-                                <p class="portfolio-card__desc">Частный сектор площадью 5 квадратных километров с новейшими домами.</p>
-                            </div>
-                            <div class="portfolio-card__image">
-                                <img src="img/portfolio/sector.webp"
-                                alt="Частный сектор"
-                                loading="lazy"
-                                width="500"
-                                height="333">
-                            </div>
-                        </div>
-                        <div class="portfolio-card">
-                            <div class="portfolio-card__info">
-                                <h3 class="portfolio-card__title">Бизнес-центр</h3>
-                                <p class="portfolio-card__desc">Офисное здание класса А, 22 этажа, стеклянный фасад.</p>
-                            </div>
-                            <div class="portfolio-card__image">
-                                <img src="img/portfolio/business.webp"
-                                alt="Бизнес-центр"
-                                loading="lazy"
-                                width="500"
-                                height="333">
-                            </div>    
-                        </div>
-                        <div class="portfolio-card">
-                            <div class="portfolio-card__info">
-                                <h3 class="portfolio-card__title">Школа</h3>
-                                <p class="portfolio-card__desc">Общеобразовательная школа на 1200 мест с бассейном и спорткомплексом.</p>                            
-                            </div>
-                            <div class="portfolio-card__image">
-                                <img src="img/portfolio/school.webp"
-                                alt="Школа"
-                                loading="lazy"
-                                width="500"
-                                height="333">
-                            </div>
-                        </div>
-                        <div class="portfolio-card">
-                            <div class="portfolio-card__info">
-                                <h3 class="portfolio-card__title">Медицинский центр</h3>
-                                <p class="portfolio-card__desc">Многофункциональный медцентр с диагностическим отделением и стационаром.</p>
-                            </div>
-                            <div class="portfolio-card__image">
-                                <img src="img/portfolio/medcenter.webp"
-                                alt="Медицинский центр"
-                                loading="lazy"
-                                width="500"
-                                height="333">
-                            </div>
-                        </div>
-                        <div class="portfolio-card">
-                            <div class="portfolio-card__info">
-                                <h3 class="portfolio-card__title">Реставрация усадьбы XIX века</h3>
-                                <p class="portfolio-card__desc">Восстановление исторического облика здания с сохранением оригинальной кладки.</p>
-                            </div>
-                            <div class="portfolio-card__image">
-                                <img src="img/portfolio/rest.webp"
-                                alt="Реставрация"
-                                loading="lazy"
-                                width="500"
-                                height="333">
-                            </div>
-                        </div>
-                        <div class="portfolio-card">
-                            <div class="portfolio-card__info">
-                                <h3 class="portfolio-card__title">Торговый центр</h3>
-                                <p class="portfolio-card__desc">ТРЦ площадью 45 000 квадратных метров с кинотеатром и фудкортом.</p>
-                            </div>
-                            <div class="portfolio-card__image">
-                                <img src="img/portfolio/mall.webp"
-                                alt="Торговый центр"
-                                loading="lazy"
-                                width="500"
-                                height="333">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <div class="footer__inner">
-                <div>
-                    <h4 class="footer__title">Навигация</h4>
-                    <ul class="footer__nav-list">
-                        <li><a href="main.html">Главная</a></li>
-                        <li><a href="about.html">О компании</a></li>
-                        <li><a href="services.html">Услуги</a></li>
-                        <li><a href="portfolio.html">Проекты</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="footer__title">Информация</h4>
-                    <ul class="footer__nav-list">
-                        <li><a href="news.html">Новости</a></li>
-                        <li><a href="contacts.html">Контакты</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="footer__title">Контакты</h4>
-                    <p class="footer__contact-item"> +7 (***) ***-**-**</p>
-                    <p class="footer__contact-item">✉ info@****.ru</p>
-                    <p class="footer__contact-item"> г. *, ул. *, дом *</p>
-                </div>
+    <footer class="footer">
+        <div class="footer__inner">
+            <div>
+                <h4 class="footer__title">Навигация</h4>
+                <ul class="footer__nav-list">
+                    <li><a href="main.html">Главная</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="portfolio.html">Проекты</a></li>
+                </ul>
             </div>
-            <div class="footer__bottom">
-                Сайт создан в ознакомительных целях. Все совпадения случайны.
+            <div>
+                <h4 class="footer__title">Информация</h4>
+                <ul class="footer__nav-list">
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
             </div>
-        </footer>
-        <script src="js/main.js"></script>
-    </body>
+            <div>
+                <h4 class="footer__title">Контакты</h4>
+                <p class="footer__contact-item"> +7 (***) ***-**-**</p>
+                <p class="footer__contact-item">✉ info@****.ru</p>
+                <p class="footer__contact-item"> г. *, ул. *, дом *</p>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            Сайт создан в ознакомительных целях. Все совпадения случайны.
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
 </html>

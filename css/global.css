@@ -1,5 +1,5 @@
 @import '../css/fonts.css';
-/* ========== RESET & BASE ========== */
+
 *,
 *::before,
 *::after {
@@ -70,7 +70,6 @@ ul {
     top: 20px;
 }
 
-/* ========== HEADER ========== */
 
 .header {
     border-bottom: 2px solid var(--color-brown-light);
